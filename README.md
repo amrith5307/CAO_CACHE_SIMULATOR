@@ -27,6 +27,14 @@ It demonstrates how cache hierarchy affects **hits, misses, and average memory a
 - **Libraries:** Matplotlib, random  
 
 ---
+## Architecture of L1 + L2 Cache Simulator
+
+The architecture of this project simulates a **two-level CPU cache system** to improve memory access efficiency. The memory hierarchy is as follows:
+
+1. **CPU:** Generates memory access requests.
+2. **L1 Cache:** Small, fast cache. Checks if requested data is available. If found, it is a **hit**, and the data is returned immediately. If not, it is a **miss**.
+3. **L2 Cache:** Larger, slower than L1. If L1 misses, L2 is checked. If found, the data is returned and also updated in L1 cache following the **LRU policy**.
+4. **Main Memory:** Accessed only if both L1 and L2 miss. Data retrieved from memory is updated in both caches to optimize future accesses.
 
 
 
