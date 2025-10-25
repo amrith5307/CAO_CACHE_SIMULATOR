@@ -28,11 +28,7 @@ It demonstrates how cache hierarchy affects **hits, misses, and average memory a
 
 ---
 
-## Project Structure
-L!+L2_cache_CAO_PROJECT/
-│-- l1+l2_cache.py
-│-- l1+l2_cache_screenshots/
-│-- README.md
+
 
 ## Algorithm and Explanation
 
